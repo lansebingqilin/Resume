@@ -1,0 +1,46 @@
+.App{
+  flex: 1;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  .bgimg{
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .list1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  >div{
+    .box{
+      width: 100%;
+      height: 100%;
+      background-color:rgba(86, 83, 100, 0.5);
+    }
+    .introduce{
+      width:500px;
+      height: 150px;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      padding: 20px 0;
+      border-radius: 20px;
+      color: #a0c6e4;
+      &:hover{
+        color: #333;
+        background-color: #fff;
+        box-shadow: 0 0 20px 1px #000;
+      }
+      >h2{
+        font-size: 40px;
+        
+        text-align: center;
+      }
+    }
+  }
+}
