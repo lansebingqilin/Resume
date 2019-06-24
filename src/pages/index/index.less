@@ -10,37 +10,40 @@
     overflow: hidden;
     position: relative;
   }
-  .list1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .list2{
+    .box{
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      .avatar{
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+        background-color: red;
+        margin-bottom: 20px;
+        &:hover{
+          box-shadow: 0 0 20px 1px #cacaca;
+        }
+      }
+      .introduce{
+        width: 60%;
+        height: 300px;
+        // background-color: #fff;
+        >p{
+          line-height: 30px;
+          font-size: 20px;
+          color:#fff;
+          text-indent:48px;
+        }
+      }
+    }
   }
   >div{
     .box{
       width: 100%;
       height: 100%;
-      background-color:rgba(86, 83, 100, 0.5);
-    }
-    .introduce{
-      width:500px;
-      height: 150px;
-      background-color: transparent;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      padding: 20px 0;
-      border-radius: 20px;
-      color: #a0c6e4;
-      &:hover{
-        color: #333;
-        background-color: #fff;
-        box-shadow: 0 0 20px 1px #000;
-      }
-      >h2{
-        font-size: 40px;
-        
-        text-align: center;
-      }
+      background-color: rgba(86, 83, 100, .7);
     }
   }
 }
